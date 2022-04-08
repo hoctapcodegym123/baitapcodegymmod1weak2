@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>bài nhập số</h3>
+Nhập số
+<input type="text" id="h1">
+Hệ số
+<select id="h2">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+</select>
+<br>
+= kết quả : <input id="h3" type="text" size="5px">
+<br>
+<button onclick="ket_qua()">showsun</button>
+</body>
+</html>
+<script>
+    function ket_qua() {
+        let a = document.getElementById('h1').value
+        let b = document.getElementById('h2').value
+        document.getElementById('h3').value=a*b
+    }
+</script>
