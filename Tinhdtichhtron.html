@@ -1,10 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<form>
+<h3>Diện tích hình tròn</h3>
+<p>Nhập bán kính <input id="bankinh" type="number" value=""></p>
+<p><button onclick="chucnangtinh()">Kết quả diện tích</button></p>
+<p><input type="number" id="Dientich"></p>
+</form>
 </body>
 </html>
+<script>
+    function chucnangtinh(){
+        let a = document.getElementById("bankinh").value
+        document.getElementById("Dientich").value=a*a*3.14
+    }
+</script>
