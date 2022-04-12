@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <tr>
+        <td>Họ tên SV</td>
+        <td>Lý</td>
+        <td>Hóa</td>
+        <td>Sinh</td>
+    </tr>
+    <tr>
+        <td><input type="text"></td>
+        <td><input id="Ly" type="number"></td>
+        <td><input id="Hoa"type="number"></td>
+        <td><input id="Sinh"type="number"></td>
+    </tr>
+    <tr>
+        <td>Tổng điểm</td>
+        <td><input id="Tong" type="number"></td>
+    </tr>
+    <tr>
+        <td>Trung bình điểm</td>
+        <td><input id="Diemtb" type="number"></td>
+    </tr>
+    <br>
+    <tr>
+        <td><button onclick="TinhToan()">KetQua</button></td>
+    </tr>
+</table>
+</body>
+</html>
+<script>
+    /* thêm dấu + vào trước document để nó ép kiểu biến sang số nguyên
+       nếu không , nó sẽ tự động nhận kiểu biến chuỗi*/
+    function TinhToan(){
+        let a = +document.getElementById("Ly").value
+        let b = +document.getElementById("Hoa").value
+        let c = +document.getElementById("Sinh").value
+        document.getElementById("Tong").value=a+b+c
+        document.getElementById("Diemtb").value=(a+b+c)/3
+    }
+</script>
