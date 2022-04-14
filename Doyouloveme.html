@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>DO YOU LOVE ME ?</h2>
+<button id="yes">Yes</button>
+<br>
+<button id="no" onmousemove="changer()">No</button>
+</body>
+</html>
+<script>
+    function changer(){
+        let btn = document.getElementById("no");
+        btn.style.marginTop=Math.random()*250 + "px";
+        btn.style.marginLeft=Math.random()*250 + "px";
+        btn.style.color = "red";
+    }
+</script>
