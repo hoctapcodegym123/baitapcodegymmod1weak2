@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<img src="111-removebg-preview.png" height="225" width="225" id="img" onclick="changer()">
+</body>
+</html>
+<script>
+    let count = 1;
+
+    function changer() {
+        if (count == 1) {
+            document.getElementById("img").src = "222-removebg-preview.png"
+            count = 2;
+        } else if (count == 2) {
+            document.getElementById("img").src = "3333-removebg-preview.png"
+            count = 3;
+        } else {
+            document.getElementById("img").src = "111-removebg-preview.png"
+            count = 1;
+        }
+    }
+</script>
